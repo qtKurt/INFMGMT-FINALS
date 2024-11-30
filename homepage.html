@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homepage.css"> 
+</head>
+
+<body>    
+    <section>
+      <div class="circle"></div>
+      
+        <header> 
+          <a href="https://www.facebook.com/PlmunEuphoriaOfficial?mibextid=ZbWKwL" class="logo"><img src="yuporya_yellow.png"></a>       
+          <nav>
+            <ul>
+                <li><a href="#" class="dropdown">Band</a><ul class="dropdown">
+                    <li><a href="#">Alto Saxophone</a></li>
+                    <li><a href="#">Clarinet</a></li>
+                    <li><a href="#">Flute</a></li>
+                    <li><a href="#">French horn</a></li>
+                    <li><a href="#">Piccolo</a></li>
+                    <li><a href="#">Trombone</a></li>
+                    <li><a href="#">Trumpet</a></li>
+                    <li><a href="#">Xylophone</a></li>
+                </ul></li>
+                
+                <li><a href="#" class="dropdown">Orchestra</a><ul class="dropdown single-column">
+                    <li><a href="#">Violin</a></li>
+                    <li><a href="#">Cello</a></li>                        
+                </ul></li>
+                
+                <li><a href="#" class="dropdown">Guitar</a><ul class="dropdown">
+                    <li><a href="#">Acoustic</a></li>
+                    <li><a href="#">Stratocaster</a></li>
+                    <li><a href="#">Telecaster</a></li>
+                    <li><a href="#">Jazzmaster</a></li>
+                    <li><a href="#">Les Paul</a></li>
+                    <li><a href="#">Baritone</a></li>
+                    <li><a href="#">Jazz Bass</a></li>
+                    <li><a href="#">Precision Bass</a></li>
+                </ul></li>
+
+                <li><a href="#" class="dropdown">Keyboard</a><ul class="dropdown single-column">
+                    <li><a href="#">Grand Piano</a></li>
+                    <li><a href="#">Keyboard</a></li>
+                    <li><a href="#">Synthesizer</a></li>
+                </ul></li>
+                
+                <li><a href="#" class="dropdown">Studio</a><ul class="dropdown single-column">
+                    <li><a href="#">Small</a></li>
+                    <li><a href="#">Medium</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Recording</a></li>
+                </ul></li>
+            </ul>
+          </nav>  
+        </header>
+        
+        <div class="content">
+            <div class="textbox">
+                
+        </div> 
+        <div class="animated-text">
+            Rent a <span></span>
+            <br>in minutes.
+        </div>
+            
+    </section>
+  
+    <script type="text/javascript">
+      function imgSlider(anything){document.querySelector('.starbucks').src=anything;}
+      function changeCircleColor(element){
+        const circle = document.querySelector('.circle');
+        const color = element.closest('li').dataset.color;
+        circle.style.background = color;
+        document.querySelector('span').style.color = color;
+      }
+    </script>
+</body>
+</html>
